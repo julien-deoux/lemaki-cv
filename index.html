@@ -21,12 +21,14 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/init.css">
   <link rel="stylesheet" href="css/coordinates.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/icons.css">
 </head>
 
 <body>
   <header class="coordinates">
     <h1 class="name">Julien Déoux</h1>
-    <h2 class="job-title">software engineer</h2>
+    <div class="job-title">software engineer</div>
     <ul class="contacts">
       <li class="contact">
         <span class="fas fa-phone contact__icon"></span>+33 (0)6 23 96 58 03
@@ -54,6 +56,63 @@
       </li>
     </ul>
   </header>
+
+  <main class="skills">
+    <section class="skill">
+      <h2 class="skill__name">Javascript</h2>
+      <article class="trait">
+        <div class="fab fa-react trait__icon react__icon"></div>
+        <h3 class="trait__name">React / Redux</h3>
+        <div class="trait__description">
+          For 5 months in 2017, as an intern in <em>Starburst Computing</em>, I
+          designed a graphical user interface aimed at helping users set up a
+          gaming environment comprised of multiple devices communicating in real
+          time. I implemented a working prototype for desktop platforms using
+          <strong>Electron</strong>, <strong>React</strong>,
+          <strong>Redux</strong> and <strong>RxJS</strong>.
+        </div>
+      </article>
+      <article class="trait">
+        <div class="fab fa-angular trait__icon angular__icon"></div>
+        <h3 class="trait__name">Angular</h3>
+        <div class="trait__description">
+          In early 2018, I followed a one week long training course on
+          <strong>Angular 5</strong> and <strong>Typescript</strong> delivered
+          by <em>Viveris Technologies</em>. Since March 2019, I have had the
+          opportunity to develop those skills by designing an interactive
+          wireframe in <strong>Angular 7</strong> for a new project as part of
+          my mission in the <em>French Ministry of Education</em>. This project
+          is being actively developed by myself and 3 other developers and will
+          use <strong>Angular</strong> as the front-end framework, and a
+          <strong>Java J2EE</strong> API in the back-end.
+        </div>
+      </article>
+      <article class="trait">
+        <div class="fab fa-node-js trait__icon node__icon"></div>
+        <h3 class="trait__name">Node.js</h3>
+        <div class="trait__description">
+          In 2016, I got introduced to <strong>Node.js</strong> during a
+          research project in <em>TELECOM Nancy</em>. The goal was to design a
+          standard API to manage various IoT devices (lamps, speakers...) over
+          various protocols (UPnP, Bluetooth...). Another student and I
+          implemented a prototype in <strong>Node</strong> with support for
+          <em>Phillips Hue</em> devices. Aside from <strong>Angular</strong> and
+          <strong>React</strong>, other projects in the
+          <strong>Node/NPM/Javacript</strong> ecosystem include:
+          <ul>
+            <li>Building a small musical blind test application for another
+              school project</li>
+            <li>Using <strong>Vue</strong> as a view library to add
+              interactivity to an old Java MVC project for the <em>Ministry of
+                Education</em></li>
+            <li>Developing a custom React-like view library from scratch as an
+              experiment to better understand the internals of the Javascript
+              language and its most popular frameworks</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
 </body>
 
 </html>

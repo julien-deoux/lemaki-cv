@@ -10,3 +10,12 @@
 
   -webkit-print-color-adjust: exact;
 }
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+strong {
+  font-weight: bold;
+}
