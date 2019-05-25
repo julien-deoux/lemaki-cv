@@ -19,3 +19,7 @@ body {
 strong {
   font-weight: bold;
 }
+
+ul {
+  padding-left: 2em; 
+}

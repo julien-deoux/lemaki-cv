@@ -1,11 +1,27 @@
-.react__icon {
+.react-icon {
   color: #61DAFB;
 }
 
-.angular__icon {
+.angular-icon {
   color: #DD0031;
 }
 
-.node__icon {
+.node-icon {
   color: #689f63;
+}
+
+.technology-icon {
+  color: #598ca3;
+}
+
+.languages-icon {
+  color: #2665b8;
+}
+
+.arts-icon {
+  color: #DD9031
+}
+
+.science-icon {
+  color: #52379e;
 }

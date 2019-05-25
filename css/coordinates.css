@@ -3,12 +3,13 @@
 .coordinates {
   padding: 4em;
   background-color: var(--blue);
+  background: linear-gradient(to right, var(--green), var(--blue));
   color: var(--white);
   text-align: center;
 }
 
 .name {
-  font-size: 4.5em;
+  font-size: 5em;
   font-weight: bold;
   letter-spacing: .1em;
 }
@@ -20,8 +21,9 @@
 }
 
 .contacts {
+  padding: 0;
   margin: 1em auto;
-  max-width: 768px;
+  max-width: 1024px;
 }
 
 .contact {
@@ -29,6 +31,7 @@
   display: inline-block;
   vertical-align: middle;
   margin: 0 1em .5em;
+  letter-spacing: .1em;
 }
 
 .contact__icon {
