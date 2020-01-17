@@ -1,0 +1,37 @@
+@import url("base.css");
+
+.header {
+  padding: 64px 0;
+}
+
+.name {
+  margin-bottom: 16px;
+  font-size: 64px;
+}
+
+.title {
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+.title:not(:last-child)::after {
+  margin: 0 16px;
+}
+
+.aside {
+  padding: 32px;
+}
+
+.aside__title {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.contact {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact__icon {
+  margin-left: 10px;
+}
