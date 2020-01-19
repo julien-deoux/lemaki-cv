@@ -1,41 +1,7 @@
-@import url("base.css");
+* {
+  font-size: 10pt;
+}
 
 @page {
   size: A4 portrait;
-}
-
-.header {
-  padding: 32pt 0;
-}
-
-.name {
-  margin-bottom: 4pt;
-  font-size: 32pt;
-}
-
-.title {
-  letter-spacing: 1.5pt;
-  font-size: 8pt;
-}
-
-.title:not(:last-child)::after {
-  margin: 0 8pt;
-}
-
-.aside {
-  padding: 16pt;
-}
-
-.aside__title {
-  font-size: 16pt;
-  margin-bottom: 8pt;
-}
-
-.contact {
-  font-size: 10pt;
-  margin-bottom: 5pt;
-}
-
-.contact__icon {
-  margin-left: 5pt;
 }

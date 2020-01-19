@@ -2,6 +2,10 @@
   color: #61DAFB;
 }
 
+.vue-icon {
+  color: #41b883;
+}
+
 .angular-icon {
   color: #DD0031;
 }
@@ -10,18 +14,14 @@
   color: #689f63;
 }
 
-.technology-icon {
-  color: #598ca3;
-}
-
-.languages-icon {
+.python-icon {
   color: #2665b8;
 }
 
-.arts-icon {
-  color: #DD9031
+.java-icon {
+  color: #dd5837;
 }
 
-.science-icon {
-  color: #52379e;
+.js-icon {
+  color: #e2ac17;
 }
