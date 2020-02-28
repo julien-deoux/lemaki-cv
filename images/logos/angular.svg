@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg:svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 250 250"
+   style="enable-background:new 0 0 250 250;"
+   xml:space="preserve"
+   sodipodi:docname="angular.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"><svg:metadata
+   id="metadata61"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></svg:metadata><svg:defs
+   id="defs59" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1062"
+   id="namedview57"
+   showgrid="false"
+   inkscape:zoom="1.2077384"
+   inkscape:cx="-44.654261"
+   inkscape:cy="146.93164"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+<svg:style
+   type="text/css"
+   id="style46">
+	.st0{fill:#DD0031;}
+	.st1{fill:#C3002F;}
+	.st2{fill:#FFFFFF;}
+</svg:style>
+<svg:g
+   id="g54"
+   transform="matrix(1.1862986,0,0,1.1862986,-23.287328,-28.35879)">
+	<svg:polygon
+   class="st0"
+   points="125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2 125,30 "
+   id="polygon48"
+   style="fill:#dd0031" />
+	<svg:polygon
+   class="st1"
+   points="125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30 125,52.2 "
+   id="polygon50"
+   style="fill:#c3002f" />
+	<svg:path
+   class="st2"
+   d="M 125,52.1 66.8,182.6 v 0 h 21.7 v 0 l 11.7,-29.2 h 49.4 l 11.7,29.2 v 0 H 183 v 0 L 125,52.1 v 0 0 z m 17,83.3 h -34 l 17,-40.9 z"
+   id="path52"
+   inkscape:connector-curvature="0"
+   style="fill:#ffffff" />
+</svg:g>
+<link
+   type="text/css"
+   id="dark-mode"
+   rel="stylesheet"
+   href="" /><style
+   type="text/css"
+   id="dark-mode-custom-style" /></svg:svg>

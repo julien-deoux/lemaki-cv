@@ -91,25 +91,63 @@
   font-size: .9rem;
 }
 
+.language,
 .techno {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
 
+.language__icon,
 .techno__icon {
   margin-right: 1rem;
   width: 4rem;
   text-align: center;
 }
 
-.techno__icon>.fab {
-  font-size: 2.5rem;
+.language__icon>img,
+.techno__icon>img {
+  max-width: 2rem;
+  max-height: 2rem;
 }
 
+.language__name,
 .techno__name {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: .8rem;
+}
+
+.job__period {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: .8rem;
+}
+
+.job__structure {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: right;
+  font-size: .8rem;
+}
+
+.job__title {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.job__details {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  font-size: .8rem;
+  font-style: italic;
 }
 
 .main {
@@ -129,4 +167,10 @@
 
 .main__paragraph {
   text-indent: 1.2rem;
+  margin-bottom: .8rem;
+}
+
+.main__paragraph>img {
+  max-width: 1.2rem;
+  max-height: 1.2rem;
 }
