@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/solid.css');
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/brands.css');
@@ -9,7 +9,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Karla', sans-serif;
+	font-family: 'Roboto', sans-serif;
   -webkit-print-color-adjust: exact;
 }
 
@@ -17,7 +17,7 @@
   width: 100%;
   background: linear-gradient(to right, #13a094, #085c8d);
   color: #fafafa;
-  padding: 3.2rem 0;
+  padding: 2.8rem 0;
 }
 
 .name {
@@ -52,17 +52,17 @@
 }
 
 .aside {
-  padding: 1.6rem;
+  padding: 1.5rem;
   max-width: 16rem;
 }
 
 .aside__section {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.5rem;
 }
 
 .aside__title {
 	font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin-bottom: .8rem;
 }
 
@@ -152,17 +152,18 @@
 
 .main {
   flex: 1;
-  padding: 1.6rem;
+  padding: 1.5rem;
 }
 
 .main__title {
 	font-family: 'Source Sans Pro', sans-serif;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: .8rem;
 }
 
 .main__section {
   margin-bottom: 1.2rem;
+  page-break-inside: avoid;
 }
 
 .main__paragraph {
