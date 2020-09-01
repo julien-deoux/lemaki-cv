@@ -20,7 +20,7 @@ const generateSkills = (function(){
 
     const xhr = new XMLHttpRequest();
     xhr.addEventListener('load', handler);
-    xhr.open('GET', `skills/${locale}/${category}.md`);
+    xhr.open('GET', `content/skills/${locale}/${category}.md`);
     xhr.send();
   }
 

@@ -75,62 +75,7 @@
         </section>
         <section class="aside__section">
           <h1 class="aside__title">Technologies</h1>
-          <div class="technos">
-            <div class="techno">
-              <span class="techno__icon">
-                <img src="images/logos/html.svg" />
-              </span>
-              <span class="techno__name">HTML</span>
-            </div>
-            <div class="techno">
-              <span class="techno__icon">
-                <img src="images/logos/css.svg" />
-              </span>
-              <span class="techno__name">CSS</span>
-            </div>
-            <div class="techno">
-              <span class="techno__icon">
-                <img src="images/logos/js.svg" />
-              </span>
-              <span class="techno__name">Javascript</span>
-            </div>
-            <div class="techno">
-              <span class="techno__icon">
-                <img src="images/logos/react.svg" />
-              </span>
-              <span class="techno__name">React + Redux</span>
-            </div>
-            <div class="techno">
-              <span class="techno__icon">
-                <img src="images/logos/vue.svg" />
-              </span>
-              <span class="techno__name">Vue</span>
-            </div>
-            <div class="techno">
-              <span class="techno__icon">
-                <img src="images/logos/angular.svg" />
-              </span>
-              <span class="techno__name">Angular</span>
-            </div>
-            <div class="techno">
-              <span class="techno__icon">
-                <img src="images/logos/node.svg" />
-              </span>
-              <span class="techno__name">Node.js</span>
-            </div>
-            <div class="techno">
-              <span class="techno__icon">
-                <img src="images/logos/python.svg" />
-              </span>
-              <span class="techno__name">Python</span>
-            </div>
-            <div class="techno">
-              <span class="techno__icon">
-                <img src="images/logos/java.svg" />
-              </span>
-              <span class="techno__name">Java</span>
-            </div>
-          </div>
+          <div class="technos" id="technos"></div>
         </section>
         <section class="aside__section">
           <h1 class="aside__title">Timeline</h1>
@@ -176,8 +121,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/generateSkills.js"></script>
+    <script src="js/generateTechnos.js"></script>
     <script>
       generateSkills('en');
+      generateTechnos();
     </script>
   </body>
 </html>

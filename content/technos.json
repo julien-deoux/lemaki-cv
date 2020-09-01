@@ -1,0 +1,11 @@
+[
+  { "name": "HTML", "icon": "images/logos/html.svg"},
+  { "name": "CSS", "icon": "images/logos/css.svg"},
+  { "name": "Javascript", "icon": "images/logos/js.svg"},
+  { "name": "React + Redux", "icon": "images/logos/react.svg"},
+  { "name": "Vue", "icon": "images/logos/vue.svg"},
+  { "name": "Angular", "icon": "images/logos/angular.svg"},
+  { "name": "Node.js", "icon": "images/logos/node.svg"},
+  { "name": "Python", "icon": "images/logos/python.svg"},
+  { "name": "Java", "icon": "images/logos/java.svg"}
+]
