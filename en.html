@@ -165,125 +165,19 @@
         </section>
       </aside>
       <main class="main">
-        <section class="main__section">
-          <h1 class="main__title">Front end development</h1>
-          <p class="main__paragraph">
-            <img src="images/logos/js.svg" />
-            <img src="images/logos/vue.svg" />
-            From <strong>May</strong> to <strong>July 2020</strong>,
-            helped with UI design and implementation for new features
-            in <strong>HeliosX</strong>'s e-commerce applications using
-            <strong>Vue</strong> and <strong>vanilla Javascript</strong>.
-          </p>
-          <p class="main__paragraph">
-            <img src="images/logos/js.svg" />
-            <img src="images/logos/html.svg" />
-            <img src="images/logos/css.svg" />
-            From <strong>October 2019</strong> to <strong>April 2020</strong>,
-            has been using <strong>HTML</strong>, <strong>CSS</strong>,
-            <strong>vanilla Javascript</strong> and <strong>jQuery</strong> to
-            build enterprise-grade chemistry applications for
-            <strong>Dotmatics</strong>.
-          </p>
-          <p class="main__paragraph">
-            <img src="images/logos/angular.svg" />
-            <img src="images/logos/css.svg" />
-            From <strong>January</strong> to <strong>September</strong> of
-            <strong>2019</strong>, used <strong>Angular 8</strong> and
-            <strong>CSS</strong> to design and build the
-            <em>Téléservice d'Affectation</em> for the
-            <strong>French Ministry of Education</strong>, a web application to
-            help middle schoolers' parents find and choose a high school for
-            their children.
-          </p>
-          <p class="main__paragraph">
-            <img src="images/logos/vue.svg" />
-            In <strong>early 2018</strong>, used <strong>Vue</strong> to
-            succesfully embed a dynamic form into a legacy
-            <strong>JavaEE</strong> application for the
-            <strong>French Ministry of Education</strong>.
-          </p>
-          <p class="main__paragraph">
-            <img src="images/logos/react.svg" />
-            From <strong>April</strong> to <strong>September</strong> of
-            <strong>2017</strong>, as an intern at
-            <strong>Starburst Computing</strong>, used <strong>React</strong>,
-            <strong>Redux</strong> and <strong>SASS</strong> inside
-            <strong>Electron</strong> to build a prototype for a customer-facing
-            desktop application.
-          </p>
-          <p class="main__paragraph">
-            <img src="images/logos/html.svg" />
-            <img src="images/logos/css.svg" />
-            Since my graduation in <strong>2017</strong>, has been using
-            <strong>HTML</strong> and <strong>CSS</strong> for all my CVs.
-          </p>
-        </section>
-        <section class="main__section">
-          <h1 class="main__title">Back end development</h1>
-          <p class="main__paragraph">
-            <img src="images/logos/java.svg" />
-            From <strong>December 2017</strong> to
-            <strong>September 2019</strong>, maintained a
-            <strong>JavaEE</strong> application for the
-            <strong>Ministry of Education</strong>. This application is used by
-            every region in France to assign middle schoolers to high schools
-            (or equivalent) using a variety of customisable criteria such as
-            grades or location. Technologies used include
-            <strong>Spring</strong>, <strong>Hibernate</strong>,
-            <strong>Quartz</strong>, <strong>IBM DB2</strong> and
-            <strong>Apache Struts 1</strong>.
-          </p>
-          <p class="main__paragraph">
-            <img src="images/logos/python.svg" />
-            During a school project in <strong>early 2017</strong>, developed a
-            small HTTP service using <strong>Python</strong>, whose goal was to
-            compute the number of non-working days between two given dates.
-          </p>
-          <p class="main__paragraph">
-            <img src="images/logos/node.svg" />
-            During a school project in <strong>early 2016</strong>, developed a
-            prototype for a <strong>Node.js</strong> API whose aim was to
-            provide developers with a standard way of detecting and controling
-            IoT devices regardless of vendor or network technology used
-            (Bluetooth, LAN...).
-          </p>
-        </section>
-        <section class="main__section">
-          <h1 class="main__title">Miscellaneous</h1>
-          <p class="main__paragraph">
-            <img src="images/logos/python.svg" />
-            In <strong>July 2019</strong>, to help with work for the
-            <strong>Ministry of Education</strong>, developed a small
-            <strong>Python</strong> tool to automatically cleanup
-            <strong>SVG</strong> files generated by drawing software such as
-            Inkscape for them to be embedded into HTML pages or Angular
-            templates. Still using <strong>Python</strong>, developed a second
-            tool to add Angular directives to those files to make an interactive
-            map.
-          </p>
-          <p class="main__paragraph">
-            <img src="images/logos/python.svg" />
-            From <strong>late 2018</strong> to <strong>September 2019</strong>,
-            created and maintained a <strong>Python</strong> script to
-            automatically set up a functional development environment for new
-            Linux developers in the <strong>Ministry of Education</strong> and
-            onboard them more easily.
-          </p>
-          <p class="main__paragraph">
-            As part of a school project in <strong>early 2015</strong>,
-            developed the graphics and physics engine of a 2D platformer using
-            <strong>C</strong> and the <strong>SDL</strong> library. Also wrote
-            and produced the <strong>soundtrack</strong> for the game.
-          </p>
-          <p class="main__paragraph">
-            <strong>Throughout 2015</strong>, as president of
-            <strong>TELECOM Nancy</strong>'s cafeteria, managed a cumulated
-            40.000€ worth of stock and coordinated the preparation of up to 100
-            meals a day. Led a team of 10 people.
-          </p>
-        </section>
+        <section class="main__section" id="front-end"></section>
+        <section class="main__section" id="back-end"></section>
+        <section class="main__section" id="misc"></section>
       </main>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.min.js"
+      integrity="sha512-KCyhJjC9VsBYne93226gCA0Lb+VlrngllQqeCmX+HxBBHTC4HX2FYgEc6jT0oXYrLgvfglK49ktTTc0KVC1+gQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/generateSkills.js"></script>
+    <script>
+      generateSkills('en');
+    </script>
   </body>
 </html>
