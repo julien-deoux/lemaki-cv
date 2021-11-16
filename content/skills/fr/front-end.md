@@ -22,7 +22,7 @@ formuler des vœux d'affectation à l'issue du brevet.
 
 ![vue][vue]
 **Début 2018**, utilisation de **Vue** pour insérer un formulaire dynamique au
-sein d'une vieille application **JavaEE** pour le **Ministère de l'Éducation
+sein d'une ancienne application **JavaEE** pour le **Ministère de l'Éducation
 Nationale**.
 
 ![react][react]
