@@ -12,7 +12,7 @@
 
   <body>
     <header class="header">
-      <div class="name">Julien Déoux</div>
+      <div id="name" class="name">Name</div>
       <ul class="titles">
         <li class="title">software engineer</li>
         <li class="title">web developer</li>
@@ -22,39 +22,7 @@
       <aside class="aside">
         <section class="aside__section">
           <h1 class="aside__title">Contacts</h1>
-          <ul class="contacts">
-            <li class="contact">
-              <span class="fas fa-phone contact__icon"></span>
-              +44 (0)7554 027682
-            </li>
-            <li class="contact">
-              <span class="fas fa-envelope contact__icon"></span>
-              <a class="contact__link" href="mailto:juliendeoux@gmail.com">
-                juliendeoux@gmail.com
-              </a>
-            </li>
-            <li class="contact">
-              <span class="fab fa-linkedin contact__icon"></span>
-              <a
-                class="contact__link"
-                href="https://linkedin.com/in/julien-deoux"
-              >
-                linkedin.com/in/julien-deoux
-              </a>
-            </li>
-            <li class="contact">
-              <span class="fab fa-github contact__icon"></span>
-              <a class="contact__link" href="https://github.com/julien-deoux">
-                github.com/julien-deoux
-              </a>
-            </li>
-            <li class="contact">
-              <span class="fab fa-bandcamp contact__icon"></span>
-              <a class="contact__link" href="https://lemaki.bandcamp.com">
-                lemaki.bandcamp.com
-              </a>
-            </li>
-          </ul>
+          <ul id="contacts" class="contacts"></ul>
         </section>
         <section class="aside__section">
           <h1 class="aside__title">Languages</h1>
@@ -122,9 +90,11 @@
     ></script>
     <script src="js/generateSkills.js"></script>
     <script src="js/generateTechnos.js"></script>
+    <script src="js/generateIdentity.js"></script>
     <script>
       generateSkills('en');
       generateTechnos();
+      generateIdentity();
     </script>
   </body>
 </html>
