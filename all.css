@@ -56,6 +56,7 @@
 
 .aside__section {
   margin-bottom: 1.5rem;
+  page-break-inside: avoid;
 }
 
 .aside__title {
