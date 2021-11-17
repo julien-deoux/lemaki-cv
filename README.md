@@ -8,5 +8,4 @@ as they provide the most accurate PDF rendering and allow the complete removal o
 
 * Completely decorrelate template and content. Left to do:
   * Languages
-  * History
   * Titles
