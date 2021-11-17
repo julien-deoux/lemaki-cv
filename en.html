@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>julien_deoux_cv</title>
+    <title>cv</title>
     <link rel="stylesheet" media="print" href="print.css" />
     <link rel="stylesheet" media="screen" href="screen.css" />
     <link rel="stylesheet" media="all" href="all.css" />
@@ -45,36 +45,8 @@
           <h1 class="aside__title">Technologies</h1>
           <div class="technos" id="technos"></div>
         </section>
-        <section class="aside__section">
+        <section id="history" class="aside__section">
           <h1 class="aside__title">Timeline</h1>
-          <div class="job">
-            <div class="job__period">May 2020 - July 2020</div>
-            <div class="job__structure">HeliosX</div>
-            <div class="job__title">Front end developer</div>
-          </div>
-          <div class="job">
-            <div class="job__period">Oct 2019 - Apr 2020</div>
-            <div class="job__structure">Dotmatics</div>
-            <div class="job__title">Front end developer</div>
-          </div>
-          <div class="job">
-            <div class="job__period">Oct 2017 - Sep 2019</div>
-            <div class="job__structure">Altran technologies</div>
-            <div class="job__title">Junior consultant engineer</div>
-            <div class="job__details">
-              Mission at the French Ministry of Education
-            </div>
-          </div>
-          <div class="job">
-            <div class="job__period">Apr 2017 - Sep 2017</div>
-            <div class="job__structure">Starburst Computing</div>
-            <div class="job__title">Intern</div>
-          </div>
-          <div class="job">
-            <div class="job__period">Sep 2014 - Sep 2017</div>
-            <div class="job__structure">TELECOM Nancy</div>
-            <div class="job__title">Engineering degree</div>
-          </div>
         </section>
       </aside>
       <main class="main">
@@ -91,10 +63,12 @@
     <script src="js/generateSkills.js"></script>
     <script src="js/generateTechnos.js"></script>
     <script src="js/generateIdentity.js"></script>
+    <script src="js/generateHistory.js"></script>
     <script>
       generateSkills('en');
       generateTechnos();
       generateIdentity();
+      generateHistory('en');
     </script>
   </body>
 </html>

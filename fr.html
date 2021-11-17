@@ -45,36 +45,8 @@
           <h1 class="aside__title">Technologies</h1>
           <div class="technos" id="technos"></div>
         </section>
-        <section class="aside__section">
+        <section id="history" class="aside__section">
           <h1 class="aside__title">Historique</h1>
-          <div class="job">
-            <div class="job__period">mai 2020 - juil. 2020</div>
-            <div class="job__structure">HeliosX</div>
-            <div class="job__title">Développeur front-end</div>
-          </div>
-          <div class="job">
-            <div class="job__period">oct. 2019 - avr. 2020</div>
-            <div class="job__structure">Dotmatics</div>
-            <div class="job__title">Développeur front-end</div>
-          </div>
-          <div class="job">
-            <div class="job__period">oct. 2017 - sept. 2019</div>
-            <div class="job__structure">Altran technologies</div>
-            <div class="job__title">Ingénieur consultant junior</div>
-            <div class="job__details">
-              Mission au Ministère de l'Éducation Nationale
-            </div>
-          </div>
-          <div class="job">
-            <div class="job__period">avr. 2017 - sept. 2017</div>
-            <div class="job__structure">Starburst Computing</div>
-            <div class="job__title">Stagiaire</div>
-          </div>
-          <div class="job">
-            <div class="job__period">sept. 2014 - sept. 2017</div>
-            <div class="job__structure">TELECOM Nancy</div>
-            <div class="job__title">Diplôme d'ingénieur</div>
-          </div>
         </section>
       </aside>
       <main class="main">
@@ -91,10 +63,12 @@
     <script src="js/generateSkills.js"></script>
     <script src="js/generateTechnos.js"></script>
     <script src="js/generateIdentity.js"></script>
+    <script src="js/generateHistory.js"></script>
     <script>
       generateSkills('fr');
       generateTechnos();
       generateIdentity();
+      generateHistory('fr');
     </script>
   </body>
 </html>
