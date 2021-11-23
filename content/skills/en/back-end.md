@@ -1,4 +1,4 @@
-# Back end development
+# Backend development
 
 ![java][java]
 From **December 2017** to **September 2019**, maintained a **JavaEE**

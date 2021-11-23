@@ -1,8 +1,42 @@
 [
   {
+    "name": "Anacours",
+    "position": {
+      "fr": "Professeur particulier",
+      "en": "Private teacher"
+    },
+    "summary": {
+      "fr": "Mathématiques et anglais",
+      "en": "English and maths"
+    },
+    "startDate": "2021-09-15"
+  },
+  {
+    "name": "Lycée Louis Armand",
+    "position": {
+      "fr": "Professeur remplaçant",
+      "en": "Substitute teacher"
+    },
+    "summary": {
+      "fr": "Sciences du numérique",
+      "en": "Computer science"
+    },
+    "startDate": "2021-10-20",
+    "endDate": "2021-11-15"
+  },
+  {
+    "name": "Super U",
+    "position": {
+      "fr": "Préparateur de commandes Drive",
+      "en": "Drive-through employee"
+    },
+    "startDate": "2020-10-15",
+    "endDate": "2021-06-06"
+  },
+  {
     "name": "HeliosX",
     "position": {
-      "fr": "Développeur frontend",
+      "fr": "Développeur front-end",
       "en": "Frontend developer"
     },
     "startDate": "2020-05-04",
@@ -11,7 +45,7 @@
   {
     "name": "Dotmatics",
     "position": {
-      "fr": "Développeur frontend",
+      "fr": "Développeur front-end",
       "en": "Frontend developer"
     },
     "startDate": "2019-10-01",

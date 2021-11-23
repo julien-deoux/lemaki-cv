@@ -1,7 +1,16 @@
 # Divers
 
+Entre **octobre** et **novembre 2021**, remplacement d'un professeur de
+sciences du numérique au **lycée technologique Louis Armand** à Paris.
+
+Depuis **septembre 2021**, cours particuliers de mathématiques et d'anglais à
+des élèves de tous niveaux.
+
+Entre **septembre 2020** et **juin 2021**, préparation des commandes du Drive
+d'un supermarché **Super U** en réponse à une affluence forte due au covid.
+
 ![python][python]
-En **Juillet 2019**, dans le cadre de la mission au **Ministère de l'Éducation
+En **juillet 2019**, dans le cadre de la mission au **Ministère de l'Éducation
 Nationale**, développement d'un outil en **Python** pour débarrasser
 automatiquement des fichiers **SVG** des métadonnées générées par Inkscape afin
 de les intégrer dans des documents HTML ou des templates Angular. Toujours avec

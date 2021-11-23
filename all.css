@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/solid.css');
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/brands.css');
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css');
@@ -11,20 +10,25 @@
   -webkit-print-color-adjust: exact;
 }
 
+a {
+  text-decoration: none;
+  font-size: inherit;
+  color: #13a094;
+}
+
 .header {
   width: 100%;
   background: linear-gradient(to right, #13a094, #085c8d);
   color: #fafafa;
-  padding: 2.8rem 0;
+  padding: 4rem 0;
 }
 
 .name {
-	font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   margin-bottom: .4rem;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: bold;
-  letter-spacing: .2rem;
+  letter-spacing: .4rem;
 }
 
 .titles {
@@ -47,22 +51,17 @@
 .body {
   color: #404040;
   display: flex;
+  margin: 1.5rem;
 }
 
 .aside {
-  padding: 1.5rem;
+  padding: 2rem;
   max-width: 24rem;
 }
 
 .aside__section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   page-break-inside: avoid;
-}
-
-.aside__title {
-	font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: .8rem;
 }
 
 .contacts {
@@ -71,12 +70,15 @@
 
 .contact {
   display: block;
-  font-size: 1rem;
+  font-size: .9rem;
+  letter-spacing: .03rem;
   margin-bottom: .5rem;
 }
 
 .contact__link {
   text-decoration: none;
+  font-size: .9rem;
+  letter-spacing: .03rem;
   color: #404040;
 }
 
@@ -112,14 +114,14 @@
 
 .language__name,
 .techno__name {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: .9rem;
+  letter-spacing: .03rem;
 }
 
 .job {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: .8rem;
+  margin-bottom: 1.6rem;
 }
 
 .job__period {
@@ -151,23 +153,32 @@
 
 .main {
   flex: 1;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
+.aside__title,
 .main__title {
-	font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2rem;
-  margin-bottom: .8rem;
+  font-size: 1.7rem;
+  letter-spacing: .04rem;
+  margin-bottom: 1.2rem;
 }
 
 .main__section {
-  margin-bottom: 1.2rem;
+  margin-bottom: 2rem;
   page-break-inside: avoid;
 }
 
 .main__paragraph {
+  font-size: .9rem;
   text-indent: 1.2rem;
   margin-bottom: .8rem;
+  line-height: 1.4rem;
+  letter-spacing: .03rem;
+}
+
+.main__paragraph>strong,
+.main__paragraph>em {
+  font-size: .9rem;
 }
 
 .main__paragraph>img {

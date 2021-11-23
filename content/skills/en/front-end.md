@@ -1,4 +1,4 @@
-# Front end development
+# Frontend development
 
 ![js][js]
 ![vue][vue]

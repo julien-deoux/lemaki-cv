@@ -5,7 +5,12 @@ const generateHistory = (function () {
       year: 'numeric'
     });
 
-    return `${formatDate(startDate)} - ${formatDate(endDate)}`;
+    const now = {
+      en: 'today',
+      fr: 'aujourd\'hui'
+    }
+
+    return `${formatDate(startDate)} - ${endDate ? formatDate(endDate) : now[locale]}`;
   }
 
   function generateJob(job, locale) {
@@ -39,10 +44,8 @@ const generateHistory = (function () {
         this.responseText,
         (key, value) => ('endDate' === key || 'startDate' === key) ? new Date(value)
           : ('position' === key || 'summary' === key) ? value[locale]
-          : value
+            : value
       );
-
-      console.log(history);
 
       history.forEach(job => {
         tag.append(generateJob(job, locale))
