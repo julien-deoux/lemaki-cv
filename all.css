@@ -1,13 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-@import url('https://use.fontawesome.com/releases/v5.8.2/css/solid.css');
-@import url('https://use.fontawesome.com/releases/v5.8.2/css/brands.css');
-@import url('https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/solid.css");
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/brands.css");
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css");
 
 * {
-	margin: 0;
-	padding: 0;
-	font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
+}
+
+@page {
+  margin: 0;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+@page :first {
+  margin-top: 0;
 }
 
 a {
@@ -20,15 +31,15 @@ a {
   width: 100%;
   background: linear-gradient(to right, #13a094, #085c8d);
   color: #fafafa;
-  padding: 4rem 0;
+  padding: 3.5rem 0;
 }
 
 .name {
   text-align: center;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
   font-size: 3rem;
   font-weight: bold;
-  letter-spacing: .4rem;
+  letter-spacing: 0.4rem;
 }
 
 .titles {
@@ -39,19 +50,19 @@ a {
 .title {
   display: inline-block;
   text-transform: uppercase;
-  letter-spacing: .15rem;
-  font-size: .8rem;
+  letter-spacing: 0.15rem;
+  font-size: 0.8rem;
 }
 
 .title:not(:last-child)::after {
-  content: '/';
-  margin: 0 .8rem;
+  content: "/";
+  margin: 0 0.8rem;
 }
 
 .body {
   color: #404040;
   display: flex;
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 .aside {
@@ -60,7 +71,7 @@ a {
 }
 
 .aside__section {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   page-break-inside: avoid;
 }
 
@@ -70,15 +81,15 @@ a {
 
 .contact {
   display: block;
-  font-size: .9rem;
-  letter-spacing: .03rem;
-  margin-bottom: .5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.03rem;
+  margin-bottom: 0.5rem;
 }
 
 .contact__link {
   text-decoration: none;
-  font-size: .9rem;
-  letter-spacing: .03rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.03rem;
   color: #404040;
 }
 
@@ -89,7 +100,7 @@ a {
 .about-paragraph {
   text-indent: 1rem;
   line-height: 1.4rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .language,
@@ -106,16 +117,16 @@ a {
   text-align: center;
 }
 
-.language__icon>img,
-.techno__icon>img {
+.language__icon > img,
+.techno__icon > img {
   max-width: 2rem;
   max-height: 2rem;
 }
 
 .language__name,
 .techno__name {
-  font-size: .9rem;
-  letter-spacing: .03rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.03rem;
 }
 
 .job {
@@ -127,27 +138,27 @@ a {
 .job__period {
   grid-column: 1;
   grid-row: 1;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .job__structure {
   grid-column: 2;
   grid-row: 1;
   text-align: right;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .job__title {
   grid-column: 1 / span 2;
   grid-row: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
 .job__details {
   grid-column: 1 / span 2;
   grid-row: 3;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-style: italic;
 }
 
@@ -156,10 +167,15 @@ a {
   padding: 2rem;
 }
 
-.aside__title,
+.aside__title {
+  font-size: 1.5rem;
+  letter-spacing: 0.04rem;
+  margin-bottom: 1rem;
+}
+
 .main__title {
   font-size: 1.7rem;
-  letter-spacing: .04rem;
+  letter-spacing: 0.04rem;
   margin-bottom: 1.2rem;
 }
 
@@ -169,19 +185,19 @@ a {
 }
 
 .main__paragraph {
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-indent: 1.2rem;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   line-height: 1.4rem;
-  letter-spacing: .03rem;
+  letter-spacing: 0.03rem;
 }
 
-.main__paragraph>strong,
-.main__paragraph>em {
-  font-size: .9rem;
+.main__paragraph > strong,
+.main__paragraph > em {
+  font-size: 0.9rem;
 }
 
-.main__paragraph>img {
+.main__paragraph > img {
   max-width: 1.2rem;
   max-height: 1.2rem;
 }

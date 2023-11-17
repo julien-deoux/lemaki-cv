@@ -1,11 +1,15 @@
 [
-  { "name": "Javascript", "icon": "images/logos/js.svg"},
-  { "name": "Python", "icon": "images/logos/python.svg"},
-  { "name": "HTML", "icon": "images/logos/html.svg"},
-  { "name": "CSS", "icon": "images/logos/css.svg"},
-  { "name": "Vue", "icon": "images/logos/vue.svg"},
-  { "name": "React + Redux", "icon": "images/logos/react.svg"},
-  { "name": "Angular", "icon": "images/logos/angular.svg"},
-  { "name": "Node.js", "icon": "images/logos/node.svg"},
-  { "name": "Java", "icon": "images/logos/java.svg"}
+  { "name": "TypeScript", "icon": "images/logos/ts.svg" },
+  { "name": "React", "icon": "images/logos/react.svg" },
+  { "name": "GraphQL", "icon": "images/logos/graphql.svg" },
+  { "name": "Node", "icon": "images/logos/node.svg" },
+  { "name": "MongoDB", "icon": "images/logos/mongo.svg" },
+  { "name": "HTML", "icon": "images/logos/html.svg" },
+  { "name": "Less", "icon": "images/logos/less.svg" },
+  { "name": "CSS", "icon": "images/logos/css.svg" },
+  { "name": "JavaScript", "icon": "images/logos/js.svg" },
+  { "name": "Python", "icon": "images/logos/python.svg" },
+  { "name": "Vue", "icon": "images/logos/vue.svg" },
+  { "name": "Angular", "icon": "images/logos/angular.svg" },
+  { "name": "Java", "icon": "images/logos/java.svg" }
 ]
