@@ -82,10 +82,13 @@
   "languages": [
     {
       "language": "French",
+      "icon": "images/flags/fr.svg",
       "fluency": "Native"
     },
     {
       "language": "English",
+      "icon": "images/flags/gb.svg",
+      "link": "efset.org/cert/N18Soj",
       "fluency": "C2"
     }
   ],

@@ -14,6 +14,8 @@ type profile = {
 
 type language = {
   language: option<string>,
+  icon: option<string>,
+  link: option<string>,
   fluency: option<string>,
 }
 

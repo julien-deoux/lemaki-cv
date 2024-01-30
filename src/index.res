@@ -77,6 +77,18 @@ let createSkill = (skill: Resume.skill) => {
   div([("class", "techno")], Array.filterMap([icon, name], x => x))
 }
 
+let createLanguage = (language: Resume.language) => {
+  let icon = Option.map(language.icon, i => img([("class", "language__icon"), ("src", i)], []))
+  let lang = Option.getOr(language.language, "")
+  let fluency = Option.getOr(language.fluency, "")
+  let label = text(`${lang} - ${fluency} `)
+  let link = Option.map(language.link, l =>
+    a([("class", "language__link"), ("href", `https://www.${l}`)], [text(l)])
+  )
+  let name = span([("class", "language__name")], Array.filterMap([Some(label), link], x => x))
+  div([("class", "language")], Array.filterMap([icon, Some(name)], x => x))
+}
+
 Option.forEach(resume.basics, basics => {
   Option.forEach(basics.name, name => {
     inject("name", text(name))
@@ -148,5 +160,11 @@ Option.forEach(resume.education, educations => {
 Option.forEach(resume.skills, skills => {
   Array.forEach(skills, skill => {
     inject("technos", createSkill(skill))
+  })
+})
+
+Option.forEach(resume.languages, languages => {
+  Array.forEach(languages, language => {
+    inject("languages", createLanguage(language))
   })
 })
