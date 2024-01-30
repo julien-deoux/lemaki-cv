@@ -8,3 +8,4 @@ let div: (array<(string, string)>, array<t>) => t
 let span: (array<(string, string)>, array<t>) => t
 let li: (array<(string, string)>, array<t>) => t
 let a: (array<(string, string)>, array<t>) => t
+let img: (array<(string, string)>, array<t>) => t

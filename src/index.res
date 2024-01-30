@@ -71,6 +71,12 @@ let createEducationMetadata = (education: Resume.education) => {
   div([("class", "section__column")], Array.filterMap([degree, institution, area, dates], x => x))
 }
 
+let createSkill = (skill: Resume.skill) => {
+  let icon = Option.map(skill.icon, i => img([("class", "techno__icon"), ("src", i)], []))
+  let name = Option.map(skill.name, n => span([("class", "techno__name")], [text(n)]))
+  div([("class", "techno")], Array.filterMap([icon, name], x => x))
+}
+
 Option.forEach(resume.basics, basics => {
   Option.forEach(basics.name, name => {
     inject("name", text(name))
@@ -136,5 +142,11 @@ Option.forEach(resume.work, works => {
 Option.forEach(resume.education, educations => {
   Array.forEach(educations, education => {
     inject("education", createEducationMetadata(education))
+  })
+})
+
+Option.forEach(resume.skills, skills => {
+  Array.forEach(skills, skill => {
+    inject("technos", createSkill(skill))
   })
 })

@@ -46,9 +46,17 @@ type education = {
   endDate: option<string>,
 }
 
+type skill = {
+  name: option<string>,
+  icon: option<string>,
+  level: option<string>,
+  keywords: option<array<string>>,
+}
+
 type t = {
   basics: option<basics>,
   languages: option<array<language>>,
   work: option<array<work>>,
   education: option<array<education>>,
+  skills: option<array<skill>>,
 }
