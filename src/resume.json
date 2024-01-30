@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Julien Déoux",
+    "label": "Software Engineer",
+    "email": "juliendeoux@gmail.com",
+    "location": {
+      "countryCode": "FR",
+      "city": "Paris",
+      "region": "Île de France",
+      "postalCode": "75002",
+      "address": "43 Rue St-Sauveur"
+    },
+    "phone": "+33 (0)6 14 94 34 76",
+    "profiles": [
+      {
+        "network": "linkedin",
+        "username": "julien-deoux",
+        "url": "https://linkedin.com/in/julien-deoux"
+      },
+      {
+        "network": "github",
+        "username": "julien-deoux",
+        "url": "https://github.com/julien-deoux"
+      }
+    ],
+    "url": "https://julien-deoux.github.io"
+  },
+  "work": [
+    {
+      "name": "HireSweet",
+      "description": "Recruitment software startup",
+      "location": "Paris, France",
+      "startDate": "2022-04-04",
+      "position": "Fullstack developer",
+      "summary": "Maintained a tech talent marketplace for startups, divided into a client-facing SPA and a candidate-facing one. Developed a recruitment CRM aimed at scaleups and staffing-oriented companies, as part of a team of 2 to 4 developers. Used **TypeScript**, **React**, **Less**, **Node**, **MongoDB** and **GraphQL**. Regularly reviewed build systems, coding practices and application performance with the CTO."
+    },
+    {
+      "name": "HeliosX",
+      "description": "Medical e-commerce platform",
+      "location": "London, England",
+      "startDate": "2020-05-04",
+      "endDate": "2020-07-31",
+      "position": "Frontend developer",
+      "summary": "Helped with UI design and implementation for new features in e-commerce applications using **Vue**, **SASS** and **vanilla JavaScript**."
+    },
+    {
+      "name": "Dotmatics",
+      "description": "Chemistry software suite",
+      "location": "Bishop's Stortford, England",
+      "startDate": "2019-10-01",
+      "endDate": "2020-04-01",
+      "position": "Frontend developer",
+      "summary": "Maintained entreprise-grade chemistry applications. Implemented a complete UI redesign to fit the company's new brand identity. Used **vanilla JavaScript** and **jQuery**."
+    },
+    {
+      "name": "Altran Technologies",
+      "description": "Software engineering service company",
+      "location": "Nancy, England",
+      "startDate": "2027-10-30",
+      "endDate": "2019-09-10",
+      "position": "Junior consultant engineer",
+      "summary": "Maintained a **JavaEE** application used by every region in France to assign middle schoolers to high schools (or equivalent) using a variety of customisable criteria such as grades or location. Technologies used include **Spring**, **Hibernate**, **Quartz**, **IBM DB2** and **Apache Struts 1**. Used **Angular 8** and **CSS** to design and build the _Téléservice d'Affectation_, a web application to help parents find and choose a high school for their children."
+    }
+  ],
+  "education": [
+    {
+      "institution": "TELECOM Nancy",
+      "url": "https://telecomnancy.eu",
+      "area": "Software Engineering",
+      "studyType": "Engineering Degree",
+      "startDate": "2014-09-01",
+      "endDate": "2017-09-04"
+    },
+    {
+      "institution": "Lycée Louis Pasteur, Besançon",
+      "area": "Sciences",
+      "studyType": "A-Levels",
+      "endDate": "2011-07-01"
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "C2"
+    }
+  ]
+}

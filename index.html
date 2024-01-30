@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>cv</title>
+    <link rel="stylesheet" media="print" href="print.css" />
+    <link rel="stylesheet" media="screen" href="screen.css" />
+    <link rel="stylesheet" media="all" href="all.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div id="name" class="name"></div>
+      <ul id="main_contacts" class="contacts"></ul>
+    </header>
+    <div class="body">
+      <section class="section" id="experience">
+        <h1 class="section__title">Experience</h1>
+      </section>
+      <section class="section">
+        <h1 class="section__title">Education</h1>
+        <div class="section__content" id="education"></div>
+      </section>
+      <section class="section" id="skills">
+        <h1 class="section__title">Skills</h1>
+        <div class="section__content">
+          <div class="section__column">
+            <h2 class="section__subtitle">Languages</h2>
+            <div class="section__list">
+              <div class="language">
+                <img class="language__icon" src="images/flags/fr.svg" />
+                <span class="language__name">French - native</span>
+              </div>
+              <div class="language">
+                <img class="language__icon" src="images/flags/gb.svg" />
+                <span class="language__name">
+                  English - C2
+                  <a
+                    class="language__link"
+                    href="https://www.efset.org/cert/N18Soj"
+                  >
+                    efset.org/cert/N18Soj
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="section__column section__column--wide">
+            <h2 class="section__subtitle">Technologies</h2>
+            <div class="section__list" id="technos"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h1 class="section__title">Contacts</h1>
+        <div class="section__column section__column--wide"></div>
+      </section>
+    </div>
+    <div id="root"></div>
+    <script src="js/generateTechnos.js"></script>
+    <script type="module" src="src/index.res.js"></script>
+    <script>
+      generateTechnos();
+    </script>
+  </body>
+</html>

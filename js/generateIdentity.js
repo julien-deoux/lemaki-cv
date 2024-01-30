@@ -3,14 +3,19 @@ const generateIdentity = (function () {
     const tag = document.createElement('li');
     tag.classList.add('contact');
 
+
     tag.innerHTML = `
       <span class="${contact.classes} contact__icon"></span>
     ` + (
         contact.link ? `
-        <a class="contact__link" href="${contact.link}">
+        <a class="contact__name" href="${contact.link}">
           ${contact.text}
         </a>
-      ` : contact.text
+      ` : `
+        <span class="contact__name">
+          ${contact.text}
+        </span>
+      `
       );
 
     return tag;

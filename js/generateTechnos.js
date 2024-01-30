@@ -4,7 +4,7 @@ const generateTechnos = (function (){
     tag.classList.add('techno');
 
     tag.innerHTML = `
-      <span class="techno__icon"><img src="${techno.icon}" /></span>
+      <img class="techno__icon" src="${techno.icon}" />
       <span class="techno__name">${techno.name}</span>
     `;
 

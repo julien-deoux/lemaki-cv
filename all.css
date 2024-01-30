@@ -1,14 +1,29 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Manrope:wght@400;500;700&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.8.2/css/solid.css");
 @import url("https://use.fontawesome.com/releases/v5.8.2/css/brands.css");
 @import url("https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css");
 
+:root {
+  --strong: 700;
+  --semi-strong: 500;
+  --regular: 400;
+  --light: 300;
+  --teal: #13a094;
+  --black: #404040;
+  --grey: #e0e0e0;
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-weight: var(--regular);
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
+}
+
+strong {
+  font-weight: var(--strong);
 }
 
 @page {
@@ -24,109 +39,143 @@
 a {
   text-decoration: none;
   font-size: inherit;
-  color: #13a094;
+  font-weight: inherit;
+  color: var(--teal);
 }
 
 .header {
-  width: 100%;
-  background: linear-gradient(to right, #13a094, #085c8d);
-  color: #fafafa;
-  padding: 3.5rem 0;
+  color: var(--black);
+  border-bottom: 0.1rem solid var(--grey);
+  padding: 2rem 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .name {
-  text-align: center;
-  margin-bottom: 0.4rem;
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 0.4rem;
-}
-
-.titles {
-  text-align: center;
-  list-style: none;
-}
-
-.title {
-  display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  font-size: 0.8rem;
-}
-
-.title:not(:last-child)::after {
-  content: "/";
-  margin: 0 0.8rem;
-}
-
-.body {
-  color: #404040;
-  display: flex;
-  margin: 1rem;
-}
-
-.aside {
-  padding: 2rem;
-  max-width: 24rem;
-}
-
-.aside__section {
-  margin-bottom: 2rem;
-  page-break-inside: avoid;
+  font-size: 2.4rem;
+  font-family: "Averia Serif Libre", serif;
+  font-weight: var(--light);
+  letter-spacing: -0.02em;
 }
 
 .contacts {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .contact {
-  display: block;
-  font-size: 0.9rem;
-  letter-spacing: 0.03rem;
-  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-weight: var(--strong);
 }
 
-.contact__link {
-  text-decoration: none;
-  font-size: 0.9rem;
-  letter-spacing: 0.03rem;
-  color: #404040;
+.contact > a {
+  color: var(--black);
 }
 
-.contact__icon {
-  width: 2rem;
+.contact:not(:last-child)::after {
+  content: "•";
+  margin: 0 0.8rem;
 }
 
-.about-paragraph {
-  text-indent: 1rem;
-  line-height: 1.4rem;
-  font-size: 0.9rem;
+.body {
+  color: var(--black);
+  gap: 2.5rem;
+}
+
+.section {
+  padding: 1.6rem 3.2rem;
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 1rem;
+}
+
+.section:not(:last-child) {
+  border-bottom: 0.1rem solid var(--grey);
+}
+
+.section__title {
+  grid-column: 1;
+  font-weight: var(--strong);
+  font-size: 0.8rem;
+}
+
+.section__subtitle {
+  font-weight: var(--strong);
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.section__content {
+  grid-column: 2;
+  display: flex;
+}
+
+.section__column {
+  width: 12rem;
+}
+
+.section__column--wide {
+  flex: 1;
+}
+
+.section__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.work__name,
+.education__degree {
+  font-weight: var(--strong);
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.work__position,
+.education__area {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: var(--light);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.work__summary,
+.education__institution {
+  position: relative;
+  font-size: 0.8rem;
+  line-height: 1.7em;
+  top: -0.2em;
 }
 
 .language,
 .techno {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.language__link {
+  font-size: 0.7rem;
 }
 
 .language__icon,
 .techno__icon {
-  margin-right: 1rem;
-  width: 4rem;
+  width: 1.2rem;
+  max-height: 1.2rem;
   text-align: center;
-}
-
-.language__icon > img,
-.techno__icon > img {
-  max-width: 2rem;
-  max-height: 2rem;
 }
 
 .language__name,
 .techno__name {
-  font-size: 0.9rem;
-  letter-spacing: 0.03rem;
+  font-size: 0.8rem;
 }
 
 .job {
@@ -152,7 +201,7 @@ a {
   grid-column: 1 / span 2;
   grid-row: 2;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: var(--strong);
 }
 
 .job__details {
@@ -160,44 +209,4 @@ a {
   grid-row: 3;
   font-size: 0.8rem;
   font-style: italic;
-}
-
-.main {
-  flex: 1;
-  padding: 2rem;
-}
-
-.aside__title {
-  font-size: 1.5rem;
-  letter-spacing: 0.04rem;
-  margin-bottom: 1rem;
-}
-
-.main__title {
-  font-size: 1.7rem;
-  letter-spacing: 0.04rem;
-  margin-bottom: 1.2rem;
-}
-
-.main__section {
-  margin-bottom: 2rem;
-  page-break-inside: avoid;
-}
-
-.main__paragraph {
-  font-size: 0.9rem;
-  text-indent: 1.2rem;
-  margin-bottom: 0.8rem;
-  line-height: 1.4rem;
-  letter-spacing: 0.03rem;
-}
-
-.main__paragraph > strong,
-.main__paragraph > em {
-  font-size: 0.9rem;
-}
-
-.main__paragraph > img {
-  max-width: 1.2rem;
-  max-height: 1.2rem;
 }
