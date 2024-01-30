@@ -10,6 +10,7 @@
   --light: 300;
   --teal: #13a094;
   --black: #404040;
+  --dark-grey: #606060;
   --grey: #e0e0e0;
 }
 
@@ -46,7 +47,7 @@ a {
 .header {
   color: var(--black);
   border-bottom: 0.1rem solid var(--grey);
-  padding: 2rem 3.2rem;
+  padding: 1.6rem 3.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -145,14 +146,26 @@ a {
   font-weight: var(--light);
   font-style: italic;
   font-size: 0.8rem;
+  margin: 0.2rem 0;
 }
 
-.work__summary,
-.education__institution {
+.work__summary {
   position: relative;
   font-size: 0.8rem;
   line-height: 1.7em;
   top: -0.2em;
+}
+
+.work__dates,
+.education__institution,
+.education__dates {
+  margin: 0.2rem 0;
+  font-size: 0.7rem;
+}
+
+.work__dates,
+.education__dates {
+  color: var(--dark-grey);
 }
 
 .language,
@@ -178,35 +191,32 @@ a {
   font-size: 0.8rem;
 }
 
-.job {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 1.6rem;
+.secondary_contacts {
+  margin-top: 0.2em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  column-gap: 2rem;
+  row-gap: 1rem;
 }
 
-.job__period {
-  grid-column: 1;
-  grid-row: 1;
-  font-size: 0.8rem;
-}
-
-.job__structure {
-  grid-column: 2;
-  grid-row: 1;
-  text-align: right;
-  font-size: 0.8rem;
-}
-
-.job__title {
-  grid-column: 1 / span 2;
-  grid-row: 2;
+.sec_contact {
+  display: flex;
+  align-items: center;
   font-size: 0.8rem;
   font-weight: var(--strong);
+  gap: 1rem;
 }
 
-.job__details {
-  grid-column: 1 / span 2;
-  grid-row: 3;
+.contact__link {
+  line-height: 1em;
+  text-decoration: none;
   font-size: 0.8rem;
-  font-style: italic;
+  color: var(--black);
+}
+
+.contact__icon {
+  height: 1em;
 }

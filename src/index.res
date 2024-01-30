@@ -6,7 +6,20 @@ open SimpleDom
 %%raw(`import { marked } from 'marked'`)
 @val @scope("marked") external parse: string => string = "parse"
 
-let unwrap = Option.forEach
+let formatDate = dateStr => {
+  dateStr
+  ->Date.fromString
+  ->Date.toLocaleDateStringWithLocaleAndOptions("en-GB", {month: #short, year: #numeric})
+}
+
+let formatDates = ((startDate, endDate)) => {
+  switch (startDate, endDate) {
+  | (None, None) => None
+  | (None, Some(ed)) => Some(formatDate(ed))
+  | (Some(sd), None) => Some(`${formatDate(sd)} - Now`)
+  | (Some(sd), Some(ed)) => Some(`${formatDate(sd)} - ${formatDate(ed)}`)
+  }
+}
 
 let trimUrl = url => {
   let regex = %re("/https?:\/\/(.*)/")
@@ -23,7 +36,11 @@ let createMainContact = (label, url) => {
 let createWorkMetadata = (work: Resume.work) => {
   let name = Option.map(work.name, n => div([("class", "work__name")], [text(n)]))
   let position = Option.map(work.position, p => div([("class", "work__position")], [text(p)]))
-  div([("class", "section__column")], Array.filterMap([name, position], x => x))
+  let dates =
+    (work.startDate, work.endDate)
+    ->formatDates
+    ->Option.map(dates => div([("class", "work__dates")], [text(dates)]))
+  div([("class", "section__column")], Array.filterMap([name, position, dates], x => x))
 }
 
 let createWorkSummary = (work: Resume.work) => {
@@ -40,35 +57,83 @@ let createWork = (work: Resume.work) => {
 }
 
 let createEducationMetadata = (education: Resume.education) => {
-  let degree = Option.map(education.studyType, n =>
-    div([("class", "education__degree")], [text(n)])
+  let degree = Option.map(education.studyType, d =>
+    div([("class", "education__degree")], [text(d)])
   )
-  let institution = Option.map(education.institution, p =>
-    div([("class", "education__institution")], [text(p)])
+  let institution = Option.map(education.institution, i =>
+    div([("class", "education__institution")], [text(i)])
   )
-  let area = Option.map(education.area, p => div([("class", "education__area")], [text(p)]))
-  div([("class", "section__column")], Array.filterMap([degree, institution, area], x => x))
+  let area = Option.map(education.area, a => div([("class", "education__area")], [text(a)]))
+  let dates =
+    (education.startDate, education.endDate)
+    ->formatDates
+    ->Option.map(dates => div([("class", "education__dates")], [text(dates)]))
+  div([("class", "section__column")], Array.filterMap([degree, institution, area, dates], x => x))
 }
 
-unwrap(resume.basics, basics => {
-  unwrap(basics.name, name => {
+Option.forEach(resume.basics, basics => {
+  Option.forEach(basics.name, name => {
     inject("name", text(name))
   })
-  unwrap(basics.url, url => {
+  Option.forEach(basics.url, url => {
     inject("main_contacts", createMainContact(trimUrl(url), url))
   })
-  unwrap(basics.email, email => {
+  Option.forEach(basics.email, email => {
     inject("main_contacts", createMainContact(email, `mailto:${email}`))
+  })
+  Option.forEach(basics.phone, phone => {
+    inject(
+      "secondary_contacts",
+      li(
+        [("class", "sec_contact")],
+        [
+          span([("class", "contact__icon fas fa-phone")], []),
+          a([("class", "contact__link"), ("href", `tel:${phone}`)], [text(phone)]),
+        ],
+      ),
+    )
+  })
+  Option.forEach(basics.profiles, profiles => {
+    Array.forEach(
+      profiles,
+      ({network, url, username}) => {
+        switch (network, url, username) {
+        | (Some(n), Some(href), Some(un)) =>
+          inject(
+            "secondary_contacts",
+            li(
+              [("class", "sec_contact")],
+              [
+                span([("class", `contact__icon fab fa-${n}`)], []),
+                a(
+                  [("class", "contact__link"), ("href", href)],
+                  [
+                    text(
+                      switch n {
+                      | "linkedin" => `linkedin.com/in/${un}`
+                      | "github" => `github.com/${un}`
+                      | _ => un
+                      },
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          )
+        | _ => ()
+        }
+      },
+    )
   })
 })
 
-unwrap(resume.work, works => {
+Option.forEach(resume.work, works => {
   Array.forEach(works, work => {
     inject("experience", createWork(work))
   })
 })
 
-unwrap(resume.education, educations => {
+Option.forEach(resume.education, educations => {
   Array.forEach(educations, education => {
     inject("education", createEducationMetadata(education))
   })

@@ -57,7 +57,7 @@
       "name": "Altran Technologies",
       "description": "Software engineering service company",
       "location": "Nancy, England",
-      "startDate": "2027-10-30",
+      "startDate": "2017-10-30",
       "endDate": "2019-09-10",
       "position": "Junior consultant engineer",
       "summary": "Maintained a **JavaEE** application used by every region in France to assign middle schoolers to high schools (or equivalent) using a variety of customisable criteria such as grades or location. Technologies used include **Spring**, **Hibernate**, **Quartz**, **IBM DB2** and **Apache Struts 1**. Used **Angular 8** and **CSS** to design and build the _Téléservice d'Affectation_, a web application to help parents find and choose a high school for their children."
