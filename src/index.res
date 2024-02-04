@@ -72,17 +72,23 @@ let createEducationMetadata = (education: Resume.education) => {
 }
 
 let createSkill = (skill: Resume.skill) => {
-  let icon = Option.map(skill.icon, i => img([("class", "techno__icon"), ("src", i)], []))
-  let name = Option.map(skill.name, n => span([("class", "techno__name")], [text(n)]))
-  div([("class", "techno")], Array.filterMap([icon, name], x => x))
+  let iconAndName = Option.mapOr(skill.name, [], n => [
+    Option.map(Map.get(Metadata.skillIcons, n), i =>
+      img([("class", "techno__icon"), ("src", i)], [])
+    ),
+    Some(span([("class", "techno__name")], [text(n)])),
+  ])
+  div([("class", "techno")], Array.filterMap(iconAndName, x => x))
 }
 
 let createLanguage = (language: Resume.language) => {
-  let icon = Option.map(language.icon, i => img([("class", "language__icon"), ("src", i)], []))
   let lang = Option.getOr(language.language, "")
+  let icon = Option.map(Map.get(Metadata.languageIcons, lang), i =>
+    img([("class", "language__icon"), ("src", i)], [])
+  )
   let fluency = Option.getOr(language.fluency, "")
   let label = text(`${lang} - ${fluency} `)
-  let link = Option.map(language.link, l =>
+  let link = Option.map(Map.get(Metadata.languageLinks, lang), l =>
     a([("class", "language__link"), ("href", `https://www.${l}`)], [text(l)])
   )
   let name = span([("class", "language__name")], Array.filterMap([Some(label), link], x => x))

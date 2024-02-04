@@ -14,8 +14,6 @@ type profile = {
 
 type language = {
   language: option<string>,
-  icon: option<string>,
-  link: option<string>,
   fluency: option<string>,
 }
 
@@ -50,7 +48,6 @@ type education = {
 
 type skill = {
   name: option<string>,
-  icon: option<string>,
   level: option<string>,
   keywords: option<array<string>>,
 }

@@ -82,29 +82,26 @@
   "languages": [
     {
       "language": "French",
-      "icon": "images/flags/fr.svg",
       "fluency": "Native"
     },
     {
       "language": "English",
-      "icon": "images/flags/gb.svg",
-      "link": "efset.org/cert/N18Soj",
       "fluency": "C2"
     }
   ],
   "skills": [
-    { "name": "TypeScript", "icon": "images/logos/ts.svg" },
-    { "name": "React", "icon": "images/logos/react.svg" },
-    { "name": "GraphQL", "icon": "images/logos/graphql.svg" },
-    { "name": "Node", "icon": "images/logos/node.svg" },
-    { "name": "MongoDB", "icon": "images/logos/mongo.svg" },
-    { "name": "HTML", "icon": "images/logos/html.svg" },
-    { "name": "Less", "icon": "images/logos/less.svg" },
-    { "name": "CSS", "icon": "images/logos/css.svg" },
-    { "name": "JavaScript", "icon": "images/logos/js.svg" },
-    { "name": "Python", "icon": "images/logos/python.svg" },
-    { "name": "Vue", "icon": "images/logos/vue.svg" },
-    { "name": "Angular", "icon": "images/logos/angular.svg" },
-    { "name": "Java", "icon": "images/logos/java.svg" }
+    { "name": "TypeScript" },
+    { "name": "React" },
+    { "name": "GraphQL" },
+    { "name": "Node" },
+    { "name": "MongoDB" },
+    { "name": "HTML" },
+    { "name": "Less" },
+    { "name": "CSS" },
+    { "name": "JavaScript" },
+    { "name": "Python" },
+    { "name": "Vue" },
+    { "name": "Angular" },
+    { "name": "Java" }
   ]
 }
